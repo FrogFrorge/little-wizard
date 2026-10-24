@@ -83,13 +83,13 @@ Unreal Engine 5.8（藍圖、動畫藍圖、Niagara、UMG、連線複製）・Bl
 
 ### 製作名單
 
-- 創意、遊戲設計與方向：**Frorge**
-- 角色概念圖與 3D 三視圖：依 Frorge 的構想，用 ChatGPT 生成
-- 3D 模型、遊戲程式與所有工具：由 AI 程式助理（Claude Code、ChatGPT／Codex）依 Frorge 的指示撰寫
+- 創意、遊戲設計與方向：**沈家樂**
+- 角色概念圖與 3D 三視圖：依沈家樂的構想，用 ChatGPT 生成
+- 3D 模型、遊戲程式與所有工具：由 AI 程式助理（Claude Code、ChatGPT／Codex）依沈家樂的指示撰寫
 - 音效與音樂：本專案原創，全部由程式合成
 - 字型：Tinos、霞鶩文楷 TC、Noto Sans JP（SIL Open Font License 1.1）；Roboto（Apache 2.0，Unreal Engine 內附）
 
-© 2026 Frorge（[FrogFrorge](https://github.com/FrogFrorge)）。保留所有權利；這個倉庫沒有開放授權，未經同意請勿轉載或使用其中的程式與圖片（字型依各自的授權）。
+© 2026 沈家樂（[FrogFrorge](https://github.com/FrogFrorge)）。保留所有權利；這個倉庫沒有開放授權，未經同意請勿轉載或使用其中的程式與圖片（字型依各自的授權）。
 
 ---
 
@@ -130,10 +130,10 @@ Unreal Engine 5.8 (Blueprints, Animation Blueprints, Niagara, UMG, replication) 
 
 ### Credits
 
-- Concept, game design and direction: **Frorge**
-- Character concept art and 3D turnaround sheets: generated with ChatGPT from Frorge's ideas
-- 3D models, game code and all the tools: written by AI coding assistants (Claude Code, ChatGPT / Codex) under Frorge's direction
+- Concept, game design and direction: **Sem Jia Le**
+- Character concept art and 3D turnaround sheets: generated with ChatGPT from Sem Jia Le's ideas
+- 3D models, game code and all the tools: written by AI coding assistants (Claude Code, ChatGPT / Codex) under Sem Jia Le's direction
 - Sound effects and music: original, synthesized in code for this project
 - Fonts: Tinos, LXGW WenKai TC, Noto Sans JP (SIL Open Font License 1.1); Roboto (Apache 2.0, bundled with Unreal Engine)
 
-© 2026 Frorge ([FrogFrorge](https://github.com/FrogFrorge)). All rights reserved: this repository has no open-source licence, so please ask before reusing its code or images (the fonts keep their own licences).
+© 2026 Sem Jia Le ([FrogFrorge](https://github.com/FrogFrorge)). All rights reserved: this repository has no open-source licence, so please ask before reusing its code or images (the fonts keep their own licences).

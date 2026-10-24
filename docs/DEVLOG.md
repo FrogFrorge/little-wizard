@@ -1,7 +1,7 @@
 # 開發紀錄 Development log
 
-小小魔法師是一輪一輪做出來的：每一輪 Frorge 試玩、看影片、提出意見，AI 程式助理依意見修改腳本、重新生成並驗證。
-Little Wizard was built in rounds: each round Frorge played the game and watched the test videos, gave feedback,
+小小魔法師是一輪一輪做出來的：每一輪沈家樂試玩、看影片、提出意見，AI 程式助理依意見修改腳本、重新生成並驗證。
+Little Wizard was built in rounds: each round Sem Jia Le played the game and watched the test videos, gave feedback,
 and the AI coding assistants changed the scripts, rebuilt everything and verified it.
 
 | 輪 Round | 內容 | What changed |
