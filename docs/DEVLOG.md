@@ -1,36 +1,51 @@
-# 開發紀錄 Development log
+# Development log
 
-小小魔法師是一輪一輪做出來的：每一輪沈家樂試玩、看影片、提出意見，AI 程式助理依意見修改腳本、重新生成並驗證。
-Little Wizard was built in rounds: each round Sem Jia Le played the game and watched the test videos, gave feedback,
-and the AI coding assistants changed the scripts, rebuilt everything and verified it.
+**English** · [繁體中文](DEVLOG.zh-TW.md)
 
-| 輪 Round | 內容 | What changed |
-|---|---|---|
-| 1–9 | 遊戲系統（對戰、競技場、介面流程、特效、音效）；角色模型從第 1 版做到第 5 版：程式化頭部、依三視圖校正比例、眼皮與眨眼改用變形目標、女生的頭髮改成絲滑髮片、自然的肩膀與手臂 | Game systems (matches, arenas, UI flow, effects, sound); character models from version 1 to 5: procedural heads, proportions matched to the turnaround sheets, morph-target blink, silky hair cards for the girls, natural shoulders and arms |
-| 10 | 遊戲裡的頭髮與綁帶物理、眨眼與施法張嘴、腳步 IK、布料織紋與小星星印花、面數減少 28–38% | In-game hair and strap physics, blinking and casting mouths, foot IK, fabric weave and star prints, 28–38% fewer triangles |
-| 11 | 角色與魔法分開（每位魔法師都能用四種魔法）、可愛的魔法特效、角色自己的動作、16 種大招 | Character and magic separated (every wizard casts all four magics), cute magic effects, the wizards' own actions, 16 ultimates |
-| 12 | 角色名字（布萊茲、妮芙、蓋爾、沃爾妲）、更沉穩的頭髮、會擺動的衣擺、頭看向準星 | Names (Blaise, Neve, Gale, Volta), calmer hair, swinging coat panels, heads looking at the crosshair |
-| 13 | 全新的合成音效與 7 首配樂、大招起手音效、大招立繪卡 | All-new synthesized sound effects and 7 music pieces, ultimate wind-up sounds, ultimate cut-in cards |
-| 14 | 普攻二段的音效與特效、插畫立繪用在所有介面、明亮的米白金色選單 | Second-press sounds and effects, the illustration used for every portrait, bright cream-and-gold menus |
-| 15–17 | 四種語言（英、繁中、日、法）與各自的字型：霞鶩文楷配 Tinos、Noto Sans JP、Tinos | Four languages (EN, ZH, JA, FR) with their own fonts: LXGW WenKai with Tinos, Noto Sans JP, Tinos |
-| 18–19 | 每位角色的完整示範影片、四種語言的介紹影片、電腦對戰影片 | Full demo video per wizard, introduction videos in four languages, a bot battle video |
-| 20 | 物理倒地（依被打方向、空中被擊倒會落地）、大招機率由 10% 調成 5%（模擬 15 場比賽決定）、影片全部重拍成正式介紹影片，對戰改用遊戲本身的第三人稱鏡頭並加入擊倒特寫 | Physics knock-outs (direction of the blow, falling to the floor when hit in mid-air), ultimate chance 10% → 5% (decided from 15 simulated matches), every video remade as a real introduction, the battle in the game's own third-person camera with knock-out close-ups |
-| 21 | 模型修飾：眼睛稍大、沃爾妲的頭髮更蓬並加長瀏海、白色衣物改為溫暖的米白；作品集整理 | Model polish: slightly larger eyes, fuller hair and a longer fringe for Volta, warm off-white garments; this portfolio |
+Little Wizard was made in about a month, in three phases. Sem Jia Le designed and directed the game throughout; after the prototype, AI coding agents wrote the code and built the assets, and every build was reviewed by playing it and watching test videos.
 
-## 大招機率的模擬結果 Ultimate chance, simulated
+## Phase 1: the prototype (late September 2026)
 
-四位電腦 AI 混戰，每種機率 5 場（Four bots, five matches per chance）：
+Sem Jia Le designed the game and built the first playable version in Unreal Engine Blueprints, step by step with ChatGPT:
 
-| 機率 Chance | 全場平均 Every (whole match) | 每位角色平均 Per wizard | 有放到大招 Wizards with one |
+- a third-person wizard in an arena;
+- casting the fireball and the other three orbs, each with its first form and its second-press effect;
+- the wizard and the magic as two separate choices (the `E_WizardType` and `E_SpellType` enumerations);
+- each wizard's traits.
+
+## Phase 2: early development with OpenAI Codex (October 2–12)
+
+Under Sem Jia Le's direction, Codex added cooldowns and the ultimate system, the match flow and the menus, aiming and the HUD, the first magic effects and ultimates, the arenas and their music, the first sound effects, and the first four versions of the 3D characters, built from turnaround sheets generated with ChatGPT.
+
+## Phase 3: rounds 1–21 with Claude Code (October 13–25)
+
+In each round Sem Jia Le played the latest build, watched the test videos and gave feedback; Claude Code changed the scripts, rebuilt everything and checked it.
+
+| Round | What changed |
+|---|---|
+| 1–9 | The characters rebuilt from scratch (version 5): procedural heads, proportions matched to the turnaround sheets, eyelids that blink with morph targets, silky hair cards for the girls, natural shoulders and arms, outfits with physics straps |
+| 10 | Hair and strap physics in the game, blinking and mouth shapes while casting, foot IK, fabric weave and star prints, 28–38% fewer triangles |
+| 11 | Cute new magic effects, the wizards' own casting poses, Neve's staff, and 16 ultimates (the wizard decides the delivery, the magic decides the payload); wizard switching in practice mode |
+| 12 | Names (Blaise, Neve, Gale, Volta), calmer hair, swinging coat panels, heads that follow the crosshair, fixes to traits and ultimates |
+| 13 | All-new synthesized sound effects and seven music pieces, ultimate wind-up sounds, ultimate cut-in cards |
+| 14 | Sounds and effects for the second press, the illustration as every portrait, bright cream-and-gold menus |
+| 15–17 | Four interface languages (English, Traditional Chinese, Japanese and French), each with its own fonts |
+| 18–19 | A demonstration video for each wizard, introduction videos in four languages, a bot battle video |
+| 20 | Physical knock-outs (falling the way the blow pushed, dropping to the floor if hit in mid-air); ultimate chance cut from 10% to 5% after simulated matches; every video remade as a proper introduction, with the battle in the game's own third-person camera and knock-out close-ups |
+| 21 | Model polish (slightly larger eyes, fuller hair and a longer fringe for Volta, warm off-white garments) and this portfolio |
+
+## Choosing the ultimate chance
+
+Four bots fought five matches at each chance:
+
+| Chance | An ultimate every (whole match) | Per wizard | Wizards who got one |
 |---|---|---|---|
 | 10% | 5.9 s | 17 s | 19 / 20 |
 | **5%** | **8.9 s** | **25 s** | **17 / 20** |
 | 2.5% | 17.8 s | 55 s | 10 / 20 |
 
-## 倒地的物理 The knock-out fall
+At 5%, ultimates stay special while almost every wizard still gets one; at 2.5%, half of the wizards never do.
 
-身體視為從腳底翻倒的剛體：θ'' = (3g ÷ 2L)·sin θ（g = 980 cm/s²，身高 L ≈ 140 cm），被打中時給一個推力，
-著地反彈 25%；在空中被擊倒時，先往下找地面，再用重力加速度落下。
+## The knock-out fall
 
-The body is a rigid body toppling about its feet: θ'' = (3g / 2L)·sin θ (g = 980 cm/s², L ≈ 140 cm), pushed by the blow,
-bouncing back 25% on landing; knocked out in mid-air, it first traces the floor below and then drops with gravity.
+The body is treated as a rigid body toppling about its feet: θ'' = (3g / 2L) · sin θ, with g = 980 cm/s² and a height of L ≈ 140 cm. The blow pushes it in the blow's direction, and it bounces back 25% on landing. A wizard knocked out in mid-air first traces the floor below, then drops to it under gravity.
