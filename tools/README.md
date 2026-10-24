@@ -1,12 +1,14 @@
 # tools
 
-The Python behind Little Wizard: every character model, Blueprint change, sound, menu text and
-video in the game was produced by one of these scripts. They were written for one machine
-(Windows, Blender 5.2, Unreal Engine 5.8 with the game project) and are published here to show
-how the project was built; each file starts with a docstring that says what it does and how it is run.
+The Python scripts behind the final version of Little Wizard: the characters, the Blueprint
+changes, the sound and music, the interface texts and the videos. All but one were written by
+Claude Code in rounds 1–21 (see the [development log](../docs/DEVLOG.md)); `wizard_pose_math.py`
+dates from the earlier Codex phase. They were written for one machine (Windows, Blender 5.2 and
+Unreal Engine 5.8 with the game project) and are published to show how the project was built;
+each file starts with a docstring that says what it does and how to run it.
 
-Each round of development has its own scripts (`r11_*` … `r21_*`, round 11 to round 21); the
-character pipeline (`*_v5.py`) is shared by all rounds since version 5 of the models.
+Scripts named `r11_*` to `r21_*` belong to rounds 11 to 21; the character pipeline (`*_v5.py`)
+has been used in every round since the models were rebuilt as version 5.
 
 ## 3D characters (Blender, `blender -b -P <script> -- <kind>`)
 
@@ -28,7 +30,7 @@ character pipeline (`*_v5.py`) is shared by all rounds since version 5 of the mo
 | `r11_bp.py` | Helpers for editing Blueprint graphs from Python (nodes, pins, links, variables, functions, layout, compile) |
 | `import_wizard_models_v5.py` | Imports the four models, builds one Animation Blueprint per wizard (pose copy from the mannequin, two-bone foot IK, per-bone AnimDynamics for hair and cloth, blink and mouth morphs), wires the character |
 | `r11_actions_pose.py`, `r11_actions.py` | The wizards' own casting, guarding and hovering poses, keyed into animation sequences |
-| `r11_traits.py`, `r12_char_b.py` | Character traits (speed, slow aura, blink, hover, …) |
+| `r11_traits.py`, `r12_char_b.py` | Trait changes: Gale's speed, Neve's hover, each wizard keeping only their own abilities, wizard switching in practice mode (F1–F4) |
 | `r11_ultimates.py`, `r12_ult_a.py` | The 16 ultimates: the character's delivery × the magic's payload |
 | `r11_vfx.py`, `r11_cute_shapes.py` | Cute magic effects: sprite shapes drawn in material code, Niagara systems |
 | `r13_wire.py`, `r14_wire.py`, `r13_import.py` | Ultimate presentation (wind-up sounds, HUD cut-in card), second-press effects, importing the sound |
