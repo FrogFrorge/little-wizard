@@ -35,7 +35,7 @@ I made Little Wizard with AI tools: ChatGPT helped with the prototype and genera
 
 ### 3. What I understood, tested and changed myself
 
-- **The prototype.** I built the first playable version in Unreal Engine Blueprints, step by step with ChatGPT: the third-person wizard, the fireball and the other three orbs with their second-press effects, and the wizards' traits. These are the parts of the game I know first-hand.
+- **The early mechanics.** I built the first playable version in Unreal Engine Blueprints, step by step with ChatGPT, and changed it myself: the third-person wizard, the fireball and the other three orbs with their second-press effects, and the wizards' traits. These are the parts of the game I know best.
 - **Testing.** I tested every build by playing it and watching the test videos, compared each model with the turnaround sheets, and described problems precisely until they were fixed.
 
 ### 4. What I cannot yet do on my own
