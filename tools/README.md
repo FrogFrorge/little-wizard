@@ -1,9 +1,10 @@
 # tools
 
 The Python scripts behind the final version of Little Wizard: the characters, the Blueprint
-changes, the sound and music, the interface texts and the videos. All but one were written by
-Claude Code in rounds 1–21 (see the [development log](../docs/DEVLOG.md)); `wizard_pose_math.py`
-dates from the earlier Codex phase. They were written for one machine (Windows, Blender 5.2 and
+changes, the sound and music, the interface texts and the videos. They are AI-generated: Sem Jia
+Le had all but one generated with Claude Code in rounds 1–21 (see the
+[development log](../docs/DEVLOG.md)), and `wizard_pose_math.py` with Codex in the earlier phase.
+They were written for one machine (Windows, Blender 5.2 and
 Unreal Engine 5.8 with the game project) and are published to show how the project was built;
 each file starts with a docstring that says what it does and how to run it.
 

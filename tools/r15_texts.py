@@ -1,5 +1,5 @@
 """Round 15: every on-screen text of 小小魔法師 in English, Traditional Chinese, Japanese and
-French (the language option; translations by Claude).
+French (the language option; translations generated with AI).
 
 Each language is complete on its own: the English game shows English only (round 14 had
 mixed in 小小魔法師 and the Chinese names / titles).
